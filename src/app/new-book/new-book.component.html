@@ -1,0 +1,96 @@
+<div class="text-color p-4 col-10" style="margin-left: 16%;">
+    <h4 class=" font-weight-bold page-header">Book Detail</h4>
+    <hr>
+    <!-- <form [formGroup]="angForm" novalidate class="col-10 mx-0 content-text">
+      <div class="form-group">
+        <div class="row my-2">
+          <label for="thaiName" class="col-12 col-sm-3 text-sm-right my-auto">Thai Name :</label>
+          <input id="thaiName" formControlName="thaiName" [(ngModel)]="thaiName" name="thaiName" type="text"
+          class="form-control col-12 col-sm-6 col-md-3">
+          <div *ngIf="angForm.controls['thaiName'].invalid && (angForm.controls['thaiName'].dirty || angForm.controls['thaiName'].touched)"
+          class="offset-12 col-sm-6 col-md-3 my-auto">
+            <div *ngIf="angForm.controls['thaiName'].errors.required" class="my-auto" style="color: crimson"><small><strong>X</strong> Please enter your book thai name.</small></div>
+          </div>
+        </div>
+      </div>
+  
+    </form> -->
+
+    <form class="col-7 content-text" style="margin-left: 2%;">
+        <div class="form-group">
+          <div class="row my-2">
+            <label for="thaiName">Thai Book Name :</label>
+            <input id="thaiName" name="thaiName" type="text" class="form-control col-12 col-sm-6 col-md-3">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row my-2">
+            <label for="englishName">English Name :</label>
+            <input id="englishName" name="englishName" type="text" class="form-control col-12 col-sm-6 col-md-3">
+          </div>
+        </div>
+        <div class="form-group">
+           <div class="row my-2">
+             <label for="writterName">Writter Name :</label>
+             <input id="writterName" name="writterName" type="text"class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+        </div>
+         <div class="form-group">
+           <div class="row my-2">
+             <label for="pseudonym">Pseudonym :</label>
+             <input id="pseudonym" name="pseudonym" type="text"class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="row my-2">
+             <label for="interpreter">Interpreter :</label>
+             <input id="interpreter" name="interpreter" type="text"class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="row my-2">
+             <label for="bookCode" >Book Code :</label>
+             <input id="bookCode"  name="bookCode" type="text"class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="row my-2">
+             <label for="catagory" >Catagory :</label>
+             <input id="catagory" name="catagory" type="text"class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="row my-2">
+             <label for="genre" >Genre :</label>
+             <input id="genre" name="genre" type="text" class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+         </div>
+         <div class="form-group">
+           <div class="row my-2">
+             <label for="publisher" >Publisher :</label>
+             <input id="publisher" name="publisher" type="text" class="form-control col-12 col-sm-6 col-md-3">
+           </div>
+         </div>
+         <div class="form-group">
+          <div class="row my-2">
+            <label for="edition" > Edition :</label>
+            <input id="edition" name="edition" type="text" class="form-control col-12 col-sm-6 col-md-3">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row my-2">
+            <label for="iSBNNumber" >ISBN Number :</label>
+            <input id="iSBNNumber"  name="iSBNNumber" type="text" class="form-control col-12 col-sm-6 col-md-3">
+          </div>
+        </div>
+     </form>
+     <hr>
+     <div class="align-self-end ml-auto">
+      <button type="button" style="float: right;" class="btn btn-outline-success">
+        Submit
+      </button>
+      <button type="button" style="float: right;" class="btn btn-outline-danger" (click)="cancle()">
+        Discard
+      </button>
+    </div>
+</div>

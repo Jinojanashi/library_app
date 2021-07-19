@@ -1,0 +1,30 @@
+<div class="text-color p-4 col-10" style="margin-left: 16%;">
+    <h4 class=" font-weight-bold page-header">Book Data</h4>
+   
+    <hr>
+    <h6>ข้อมูลหนังสือในห้องสมุด</h6>
+    <br>
+    <br>
+      <div class="col-12 px-0 table-height" style="overflow:auto">  
+      <table class="table">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Book Number</th>
+            <th scope="col">Thai Book Name</th>
+            <th scope="col">English Book Name</th>
+            <th scope="col">Catagory</th>
+            <th scope="col">Genre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let record of records">
+            <th scope="row">{{record.book_number}}</th>
+            <td>{{record.book_name_th}}</td>
+            <td>{{record.book_name_en}}</td>
+            <td>{{record.catagory}}</td>
+            <td>{{record.genre}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
